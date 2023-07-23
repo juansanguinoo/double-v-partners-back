@@ -6,6 +6,8 @@ Pasos para ejecutar el proyecto:
 2. Ejecutar el comando "docker compose up" dentro del directorio del proyecto.
 3. Debido a la configuración específica del proyecto y el tiempo que tome la base de datos en iniciarse, deberás ejecutar nuevamente el comando "docker compose up" cuando el primero haya terminado
    para permitir que la base de datos se conecte correctamente a la API.
+   * Una vez se ejecute el primer comando "docker compose up" terminar la ejecución del Docker y nuevamente volver a ejecutar el mismo comando.
+     Esto se hace para lograr que la base de datos y el servidor se ejecuten correctamente. 
 
 # Descripción
 
@@ -15,7 +17,7 @@ busque minimizar el acoplamiento y maximizar la cohesión entre los diferentes c
 separar claramente las responsabilidades de cada capa del sistema, manteniendo la lógica de negocio aislada de los detalles de implementación y tecnologías utilizadas.
 
 Las tecnologías manejadas fueron NodeJS, un entorno altamente eficiente y ágil, permitiendo aprovechar al máximo el tiempo de respuesta. 
-GraphQL para el sistema de consulta de datos, ya que proporciona flexibilidad y eficiencia al permitir a los usuarios obtener solo la información que necesitan, 
-evitando problemas de sobre o subconsulta. Además, Apollo Server ha sido utilizado para la implementación del servidor GraphQL, brindando herramientas para facilitar la comunicación con el frontend.
+GraphQL para el sistema de consulta de datos, ya que proporciona flexibilidad y eficiencia al permitir a los usuarios obtener solo la información que necesitan, evitando problemas de sobre o subconsulta. 
+Además, Apollo Server ha sido utilizado para la implementación del servidor GraphQL, brindando herramientas para facilitar la comunicación con el frontend. MySQL como base de datos relacional.
 TypeORM como ORM para establecer una comunicación efectiva y optimizada con la base de datos MySQL. Finalmente, Docker, que permite encapsular la aplicación, la base de datos y 
 sus dependencias en contenedores independientes.
