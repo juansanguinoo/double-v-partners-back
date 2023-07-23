@@ -4,9 +4,8 @@ Pasos para ejecutar el proyecto:
 
 1. Clonar el repositorio.
 2. Ejecutar el comando "docker compose up" dentro del directorio del proyecto.
-3. Dependiendo de la configuración específica del proyecto y el tiempo que tome la base de datos en iniciarse, es posible que debas ejecutar nuevamente el comando docker compose up
+3. Debido a la configuración específica del proyecto y el tiempo que tome la base de datos en iniciarse, deberás ejecutar nuevamente el comando "docker compose up" cuando el primero haya terminado
    para permitir que la base de datos se conecte correctamente a la API.
-
 
 # Descripción
 
